@@ -1,0 +1,36 @@
+/*
+	Copyright styles
+*/
+
+.copyright {
+	background: $color-1;
+
+	.container {
+		@include flexrow(center, center);
+	}
+
+	.left,
+	.right {
+		margin: 0;
+		padding: 10px 0;
+		color: white;
+	}
+
+	.left {
+		padding-right: 10px;
+	}
+
+	.right {
+		padding-left: 10px;
+	}
+
+	.link {
+		@include transition;
+		color: rgb(200, 200, 200);
+		font-weight: bold;
+		&:hover {
+			color: white;
+			text-shadow: 0px 0px 2px white;
+		}
+	}
+}

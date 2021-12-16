@@ -1,0 +1,12 @@
+{
+	"name": "Singer France",
+	"logo": "singer-france.png",
+	"theme": "rgb(227, 0, 68)",
+	"theme_hex": "#e30044",
+	"author": {
+		"name": "Manjaka13",
+		"email": "manjaka.rajaonson@gmail.com",
+		"linkedin": "https://linkedin.com/in/harijaona-rajaonson/"
+	},
+	"baseUrl": "api/"
+}

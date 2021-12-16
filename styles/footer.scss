@@ -1,0 +1,84 @@
+/*
+	Footer styles
+*/
+
+.footer {
+	background: white;
+	box-shadow: 0px 0px 10px rgb(200, 200, 200);
+
+	.container {
+		@include flexrow(initial, space-between);
+		padding-bottom: 20px;
+	}
+
+	&__item {
+		width: calc(100% / 3);
+		.title {
+			margin: 0;
+			padding: 20px;
+			color: rgb(80, 80, 80);
+		}
+		.separator {
+			width: 30%;
+			height: 5px;
+			background: #e30044;
+			margin: 0 0 0 20px;
+		}
+		.list {
+			padding: 10px 0 10px 0;
+			margin: 0;
+		}
+		.list-item {
+			padding: 10px 0 10px 20px;
+		}
+		.link {
+			@include transition;
+			color: rgb(120, 120, 120);
+			&:hover {
+				color: $color-1;
+			}
+		}
+		.text {
+			text-align: justify;
+			padding: 20px;
+			margin: 0;
+			color: rgb(120, 120, 120);
+		}
+		.form {
+			width: calc(100% - 40px);
+			padding: 0;
+			margin: 0 20px 0 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 0px 0px 1px black;
+		}
+		.input {
+			width: 100%;
+			padding: 10px 20px;
+			border: none;
+			background: rgb(245, 245, 245);
+		}
+		.submit {
+			border: none;
+			padding: 10px 20px;
+			background: $color-1;
+			color: white;
+			cursor: pointer;
+		}
+	}
+
+	.about {
+		@include flexcol(flex-start, initial);
+		border-top: 3px rgb(200, 200, 200) solid;
+		padding-top: 10px;
+	}
+
+	.about-text {
+		padding: 10px 0;
+		text-align: justify;
+		color: rgb(120, 120, 120);
+		margin: 0;
+		font-size: 10pt;
+	}
+}
