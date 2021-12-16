@@ -6,7 +6,8 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"prepare": "husky install"
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -29,7 +30,7 @@
 		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-react": "^7.27.0",
-		"husky": "^7.0.4",
+		"husky": "^7.0.0",
 		"prettier": "^2.4.1",
 		"sass": "^1.43.4",
 		"typescript": "^4.4.4"
