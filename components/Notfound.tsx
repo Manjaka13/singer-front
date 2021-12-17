@@ -9,14 +9,23 @@ library.add(faExclamationCircle);
 const Notfound = (): JSX.Element => (
 	<section className="notfound">
 		<div className="container">
-    		<div className="notfound__window">
-	    		<h2 className="title"><Icon icon={faExclamationCircle} /> Oups, page introuvable !</h2>
-	    		<div className="separator"></div>
-	    		<p className="text">
-	    			Il semblerait que le contenu que vous voulez consuler n&apos;existe pas ou a été retiré du site, veuillez revenir à <Link href="/" passHref><a className="link" title="Revenir à l&apos;accueil">l&apos;accueil</a></Link> du site pour continuer votre navigation.
-	    		</p>
-    		</div>
-    	</div>
+			<div className="notfound__window">
+				<h2 className="title">
+					<Icon icon={faExclamationCircle} /> Oups, page introuvable !
+				</h2>
+				<div className="separator"></div>
+				<p className="text">
+					Il semblerait que le contenu que vous voulez consuler n&apos;existe pas ou
+					a été retiré du site, veuillez revenir à{" "}
+					<Link href="/" passHref>
+						<a className="link" title="Revenir à l'accueil">
+							l&apos;accueil
+						</a>
+					</Link>{" "}
+					du site pour continuer votre navigation.
+				</p>
+			</div>
+		</div>
 	</section>
 );
 

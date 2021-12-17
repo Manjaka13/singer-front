@@ -99,38 +99,38 @@
 	}
 
 	.quote {
-	    position: relative;
-	    margin: 20px auto;
-	    padding: 0.5em 2em 0.5em 3em;
-	    width: 70%;
-	    font-size: 17pt;
-	    color: rgb(80, 80, 80);
-	    &:before {
-		    position: absolute;
-		    font-size: 6em;
-		    line-height: 1;
-		    top: 0;
-		    left: 0;
-		    content: "\201C";
-		    color: $color-1;
+		position: relative;
+		margin: 20px auto;
+		padding: 0.5em 2em 0.5em 3em;
+		width: 70%;
+		font-size: 17pt;
+		color: rgb(80, 80, 80);
+		&:before {
+			position: absolute;
+			font-size: 6em;
+			line-height: 1;
+			top: 0;
+			left: 0;
+			content: "\201C";
+			color: $color-1;
 		}
 		&:after {
-		    position: absolute;
-		    float:right;
-		    font-size:6em;
-		    line-height: 1;
-		    right:0;
-		    bottom:-0.5em;
-		    content: "\201D";
-		    color: $color-1;
+			position: absolute;
+			float: right;
+			font-size: 6em;
+			line-height: 1;
+			right: 0;
+			bottom: -0.5em;
+			content: "\201D";
+			color: $color-1;
 		}
 		footer {
-		    padding: 20px 20px 0 0;
-		    text-align: right;
+			padding: 20px 20px 0 0;
+			text-align: right;
 		}
 		cite:before {
-		    content: "\2013";
-		    margin-right: 20px;
+			content: "\2013";
+			margin-right: 20px;
 		}
 	}
 

@@ -9,7 +9,7 @@ import {
 	faMapMarkerAlt,
 	faBook,
 	faNewspaper,
-	faBars
+	faBars,
 } from "@fortawesome/free-solid-svg-icons";
 
 // Load icons
@@ -32,35 +32,35 @@ const Navigation = (): JSX.Element => {
 			name: "Accueil",
 			title: "Revenir à l'accueil",
 			link: "/",
-			icon: faHome
+			icon: faHome,
 		},
 		{
 			name: "Produits",
 			title: "Voir tous nos produits",
 			link: "#products",
-			icon: faShoppingCart
+			icon: faShoppingCart,
 		},
 		{
 			name: "Magasins",
 			title: "Trouvez un point de vente",
 			link: "#magasins",
-			icon: faMapMarkerAlt
+			icon: faMapMarkerAlt,
 		},
 		{
 			name: "Bibliothèque",
 			title: "Consulter des livres sur la couture",
 			link: "/bibliotheque",
-			icon: faBook
+			icon: faBook,
 		},
 		{
 			name: "Actualités",
 			title: "Consulter des livres sur la couture",
 			link: "/actualites",
-			icon: faNewspaper
+			icon: faNewspaper,
 		},
 	];
 
-	const mappedLinks = links.map(item => (
+	const mappedLinks = links.map((item) => (
 		<li className="section__item" key={uuidv4()}>
 			<Link href={item.link} passHref>
 				<a className="section__link" title={item.title}>
@@ -76,15 +76,21 @@ const Navigation = (): JSX.Element => {
 				<div className="container nav__container">
 					<div className="nav__logo-box">
 						<figure className="nav__logo-1">
-							<img className="nav__logo-image" src="singer-france.png" alt="Logo Singer France" />
+							<img
+								className="nav__logo-image"
+								src="singer-france.png"
+								alt="Logo Singer France"
+							/>
 						</figure>
 						<figure className="nav__logo-2">
-							<img className="nav__logo-image" src="singer-france-text.png" alt="Logo Texte Singer France" />
+							<img
+								className="nav__logo-image"
+								src="singer-france-text.png"
+								alt="Logo Texte Singer France"
+							/>
 						</figure>
 					</div>
-					<ul className="section">
-						{mappedLinks}
-					</ul>
+					<ul className="section">{mappedLinks}</ul>
 					<div className="trigger" title="Afficher le menu">
 						<Icon icon={faBars} />
 					</div>
