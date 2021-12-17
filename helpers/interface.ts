@@ -2,8 +2,6 @@
 	All typescript interfaces
 */
 
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-
 // App props
 export interface ISingerFranceProps {
 	Component: React.ComponentClass;
@@ -15,7 +13,6 @@ export interface IHeadingProps {
 	title?: string;
 	image?: string;
 	children?: string;
-	active?: number;
 }
 
 // Page component props
@@ -24,10 +21,4 @@ export interface IPageProps {
 	image?: string;
 	description?: string;
 	children?: JSX.Element;
-	active?: number;
-}
-
-// Navigation component props
-export interface INavigationProps {
-	active: number;
 }

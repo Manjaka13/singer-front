@@ -12,7 +12,6 @@ const Home = (): JSX.Element => {
 			title="La marque Singer France"
 			description="C'est l'histoire d'une marque de machines à coudre devenue vite indispensable à un grand nombre de foyers en France."
 			image="/cover/la-marque.jpg"
-			active={0}
 		>
 			<Lamarque />
 		</Page>

@@ -12,7 +12,6 @@ const Home = (): JSX.Element => {
 			title="404 Introuvable"
 			description="Oups, il semblerait qu'il y ait un problème."
 			image="/cover/404.jpg"
-			active={0}
 		>
 			<Notfound />
 		</Page>

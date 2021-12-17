@@ -32,7 +32,7 @@ const Lamarque = (): JSX.Element => (
     		<div className="representation">
     			<a className="representation__item" href="#expertise" title="Consulter">
     				<Icon className="icon" icon={faThumbsUp} />
-    				<p className="text">L'Expertise</p>
+    				<p className="text">L&apos;Expertise</p>
     			</a>
     			<div className="linking">
     				<div className="left"><div className="inner"></div></div>

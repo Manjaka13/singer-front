@@ -13,7 +13,7 @@ const Notfound = (): JSX.Element => (
 	    		<h2 className="title"><Icon icon={faExclamationCircle} /> Oups, page introuvable !</h2>
 	    		<div className="separator"></div>
 	    		<p className="text">
-	    			Il semblerait que le contenu que vous voulez consuler n'existe pas ou a été retiré du site, veuillez revenir à <Link href="/" passHref><a className="link" title="Revenir à l'accueil">l'accueil</a></Link> du site pour continuer votre navigation.
+	    			Il semblerait que le contenu que vous voulez consuler n&apos;existe pas ou a été retiré du site, veuillez revenir à <Link href="/" passHref><a className="link" title="Revenir à l&apos;accueil">l&apos;accueil</a></Link> du site pour continuer votre navigation.
 	    		</p>
     		</div>
     	</div>

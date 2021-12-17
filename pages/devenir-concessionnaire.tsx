@@ -12,7 +12,6 @@ const Home = (): JSX.Element => {
 			title="Devenir concessionnaire Singer France"
 			description="Découvrez comment devenir concesssionnaire Singer, nous vous asssistons dans vos démarches."
 			image="/cover/devenir-concessionnaire.jpg"
-			active={0}
 		>
 			<Devenirconcessionnaire />
 		</Page>

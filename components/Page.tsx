@@ -19,7 +19,6 @@ const Page: React.FC<IPageProps> = ({
 	image,
 	description,
 	children,
-	active,
 }): JSX.Element => (
 	<>
 		<Heading title={title} image={image}>
