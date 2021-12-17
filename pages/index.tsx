@@ -1,5 +1,6 @@
 import React from "react";
 import Page from "components/Page";
+import Choixmachine from "components/Choixmachine";
 
 /*
 	Home page
@@ -13,7 +14,7 @@ const Home = (): JSX.Element => {
 			image="cover.png"
 			active={0}
 		>
-			<h1>Hello world !</h1>
+			<Choixmachine />
 		</Page>
 	);
 };

@@ -45,7 +45,7 @@ a {
 }
 
 .container {
-	@include flexrow(initial, flex-start);
+	@include flexcol(initial, flex-start);
 	width: 1400px;
 	margin: auto;
 

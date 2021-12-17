@@ -1,0 +1,30 @@
+/*
+	Section styles
+*/
+
+.section-title {
+	margin-top: 76px;
+	display: flex;
+	align-items: center;
+	padding: 20px 0 20px 0;
+
+	.vertical-bar {
+		width: 5px;
+		height: 40px;
+		background: red;
+		margin-right: 20px;
+	}
+	.title {
+		font-size: 30pt;
+		margin: 0;
+		padding: 0;
+		color: rgb(70, 70, 70);
+	}
+}
+
+.section-paragraph {
+	margin: 0;
+	padding: 0 0 20px 0;
+	text-align: justify;
+	color: rgb(85, 85, 85);
+}
