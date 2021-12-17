@@ -8,7 +8,8 @@ import {
 	faShoppingCart,
 	faMapMarkerAlt,
 	faBook,
-	faNewspaper
+	faNewspaper,
+	faBars
 } from "@fortawesome/free-solid-svg-icons";
 
 // Load icons
@@ -17,7 +18,8 @@ library.add(
 	faShoppingCart,
 	faMapMarkerAlt,
 	faBook,
-	faNewspaper
+	faNewspaper,
+	faBars
 );
 
 /*
@@ -39,7 +41,7 @@ const Navigation = (): JSX.Element => {
 			icon: faShoppingCart
 		},
 		{
-			name: "Nos magasins",
+			name: "Magasins",
 			title: "Trouvez un point de vente",
 			link: "#magasins",
 			icon: faMapMarkerAlt
@@ -61,30 +63,32 @@ const Navigation = (): JSX.Element => {
 	const mappedLinks = links.map(item => (
 		<li className="section__item" key={uuidv4()}>
 			<Link href={item.link} passHref>
-			    <a className="section__link" title={item.title}>
-			    	<Icon icon={item.icon} /> {item.name}
-			    </a>
+				<a className="section__link" title={item.title}>
+					<Icon icon={item.icon} /> {item.name}
+				</a>
 			</Link>
 		</li>
 	));
-
 
 	return (
 		<>
 			<nav className="nav">
 				<div className="container nav__container">
-	    			<div className="nav__logo-box">
-			    		<figure className="nav__logo-1">
-			    			<img className="nav__logo-image" src="singer-france.png" alt="Logo Singer France" />
-			    		</figure>
-			    		<figure className="nav__logo-2">
-			    			<img className="nav__logo-image" src="singer-france-text.png" alt="Logo Texte Singer France" />
-			    		</figure>
-		    		</div>
-		    		<ul className="section">
-		    			{mappedLinks}
-		    		</ul>
-		    	</div>
+					<div className="nav__logo-box">
+						<figure className="nav__logo-1">
+							<img className="nav__logo-image" src="singer-france.png" alt="Logo Singer France" />
+						</figure>
+						<figure className="nav__logo-2">
+							<img className="nav__logo-image" src="singer-france-text.png" alt="Logo Texte Singer France" />
+						</figure>
+					</div>
+					<ul className="section">
+						{mappedLinks}
+					</ul>
+					<div class="trigger" title="Afficher le menu">
+						<Icon icon={faBars} />
+					</div>
+				</div>
 			</nav>
 		</>
 	);

@@ -26,7 +26,7 @@ const Page: React.FC<IPageProps> = ({
 			{description}
 		</Heading>
 		<main>
-			<Navigation active={active} />
+			<Navigation />
 			{children}
 		</main>
 		<Footer />
