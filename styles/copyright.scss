@@ -7,6 +7,9 @@
 
 	.container {
 		@include flexrow(center, center);
+		@include responsive($breakpoint) {
+			@include flexcol(center, initial);
+		}
 	}
 
 	.left,
@@ -14,6 +17,10 @@
 		margin: 0;
 		padding: 10px 0;
 		color: white;
+		@include responsive($breakpoint) {
+			padding: 5px 0;
+			text-align: center;
+		}
 	}
 
 	.left {

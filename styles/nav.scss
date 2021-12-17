@@ -2,8 +2,6 @@
 	Navbar
 */
 
-$break-size: 850px;
-
 .nav {
 	width: 100%;
 	height: 76px;
@@ -62,7 +60,7 @@ $break-size: 850px;
 
 	.section {
 		@include flexrow(initial, initial);
-		@include responsive($break-size) {
+		@include responsive($breakpoint) {
 			display: none;
 		}
 		&__item {
@@ -106,7 +104,7 @@ $break-size: 850px;
 			font-size: 25pt;
 			color: $color-1;
 		}
-		@include responsive($break-size) {
+		@include responsive($breakpoint) {
 			@include flexrow(center, center);
 		}
 	}
