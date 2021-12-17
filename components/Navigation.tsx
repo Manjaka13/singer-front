@@ -85,7 +85,7 @@ const Navigation = (): JSX.Element => {
 					<ul className="section">
 						{mappedLinks}
 					</ul>
-					<div class="trigger" title="Afficher le menu">
+					<div className="trigger" title="Afficher le menu">
 						<Icon icon={faBars} />
 					</div>
 				</div>
