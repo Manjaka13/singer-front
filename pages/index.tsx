@@ -9,8 +9,8 @@ import Choixmachine from "components/Choixmachine";
 const Home = (): JSX.Element => {
 	return (
 		<Page
-			title="Les livres d'Henri Potier"
-			description="Parcourez la liste des livres d'Henri Potier à prix abordables."
+			title="Acheter une machine à coudre Singer France"
+			description="Achetez des produits Singer France ou profitez de divers services."
 			image="cover.png"
 			active={0}
 		>

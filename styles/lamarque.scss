@@ -1,0 +1,147 @@
+.lamarque {
+	.mini-title {
+		color: $color-1;
+		padding-top: 96px;
+	}
+
+	.paragraph {
+		color: rgb(80, 80, 80);
+		text-align: justify;
+		margin: 0;
+		padding: 10px 0;
+		line-height: 25px;
+	}
+
+	.box {
+		background: white;
+		padding: 10px 20px;
+		box-shadow: 0px 0px 10px rgb(200, 200, 200);
+		margin-top: 20px;
+	}
+
+	.bold {
+		font-weight: bold;
+	}
+
+	.list {
+		list-style-type: disc;
+		padding: 0 0 0 50px;
+		&__item {
+			padding: 5px 0;
+			color: rgb(80, 80, 80);
+		}
+	}
+
+	.representation {
+		@include flexrow(center, center);
+		&__item {
+			@include flexcol(center, center);
+			width: 140px;
+			height: 140px;
+			background: $color-1;
+			border-radius: 50%;
+			box-shadow: 4px 4px 10px rgb(120, 120, 120);
+			.icon {
+				@include transition;
+				font-size: 40pt;
+				color: white;
+			}
+			.text {
+				@include transition;
+				margin: 0;
+				padding: 10px;
+				color: white;
+				font-size: 11pt;
+				text-align: center;
+				font-weight: bold;
+			}
+			&:hover {
+				.icon {
+					font-size: 30pt;
+				}
+				.text {
+					font-size: 9pt;
+				}
+			}
+		}
+	}
+
+	.linking {
+		@include flexrow(initial, center);
+		.left,
+		.right {
+			@include flexrow(center, center);
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background: $color-1;
+			box-shadow: 2px 2px 5px rgb(120, 120, 120);
+		}
+		.inner {
+			width: 80%;
+			height: 80%;
+			border-radius: 50%;
+			background: white;
+		}
+		.mid {
+			width: 80px;
+			height: 7px;
+			background: $color-1;
+		}
+	}
+
+	.engagement {
+		color: $color-1;
+		text-align: center;
+		margin: 0;
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+
+	.quote {
+	    position: relative;
+	    margin: 20px auto;
+	    padding: 0.5em 2em 0.5em 3em;
+	    width: 70%;
+	    font-size: 17pt;
+	    color: rgb(80, 80, 80);
+	    &:before {
+		    position: absolute;
+		    font-size: 6em;
+		    line-height: 1;
+		    top: 0;
+		    left: 0;
+		    content: "\201C";
+		    color: $color-1;
+		}
+		&:after {
+		    position: absolute;
+		    float:right;
+		    font-size:6em;
+		    line-height: 1;
+		    right:0;
+		    bottom:-0.5em;
+		    content: "\201D";
+		    color: $color-1;
+		}
+		footer {
+		    padding: 20px 20px 0 0;
+		    text-align: right;
+		}
+		cite:before {
+		    content: "\2013";
+		    margin-right: 20px;
+		}
+	}
+
+	.partner-title {
+		color: $color-1;
+		margin-top: 96px;
+		padding-bottom: 20px;
+	}
+
+	.partner-image {
+		width: 100%;
+		margin-bottom: 96px;
+	}
+}
