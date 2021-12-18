@@ -1,6 +1,6 @@
 {
 	"name": "Singer France",
-	"logo": "singer-france.png",
+	"logo": "/singer-france.png",
 	"theme": "rgb(227, 0, 68)",
 	"theme_hex": "#e30044",
 	"author": {

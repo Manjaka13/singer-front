@@ -35,8 +35,11 @@
 			padding: 10px 20px;
 			border: none;
 			cursor: pointer;
+			background: white;
+			color: rgb(80, 80, 80);
 			&:hover {
 				background: darken(white, 10%);
+				color: black;
 			}
 			&:active {
 				background: lighten(white, 10%);

@@ -37,7 +37,7 @@ const Navigation = (): JSX.Element => {
 		{
 			name: "Produits",
 			title: "Voir tous nos produits",
-			link: "#products",
+			link: "/produits",
 			icon: faShoppingCart,
 		},
 		{

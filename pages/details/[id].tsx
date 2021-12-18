@@ -12,9 +12,9 @@ const Details = (): JSX.Element => {
 			description="Visionnez en détails les spécificités du produit."
 			image="/machine.png"
 		>
-			<p>Details: { id }</p>
+			<p>Details: {id}</p>
 		</Page>
 	);
-}
+};
 
 export default Details;

@@ -28,12 +28,12 @@ const Page: React.FC<IPageProps> = ({
 		<main>
 			<Navigation />
 			{children}
-			<Cardproduct
+			{/*<Cardproduct
 				id="1d91c30b-b057-46dc-bcfb-e055f4d3d262"
 				title="Featherweight"
 				price={849}
 				description="Cette machine est compacte et complète, elle est facile à transporter et possède aussi de nombreuses fonctionnalités."
-			/>
+			/>*/}
 		</main>
 		<Footer />
 		<Copyright />
