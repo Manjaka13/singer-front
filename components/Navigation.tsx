@@ -78,14 +78,14 @@ const Navigation = (): JSX.Element => {
 						<figure className="nav__logo-1">
 							<img
 								className="nav__logo-image"
-								src="singer-france.png"
+								src="/singer-france.png"
 								alt="Logo Singer France"
 							/>
 						</figure>
 						<figure className="nav__logo-2">
 							<img
 								className="nav__logo-image"
-								src="singer-france-text.png"
+								src="/singer-france-text.png"
 								alt="Logo Texte Singer France"
 							/>
 						</figure>
