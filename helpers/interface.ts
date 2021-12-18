@@ -22,3 +22,20 @@ export interface IPageProps {
 	description?: string;
 	children?: JSX.Element;
 }
+
+// Promotion interface
+export interface IPromotion {
+	type: number;
+	name: string;
+	value?: number;
+}
+
+// Product interface
+export interface IProduct {
+	id: string;
+	title: string;
+	price: number;
+	description: string;
+	promotion?: IPromotion;
+	outstock?: boolean;
+}
