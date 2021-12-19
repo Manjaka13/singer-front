@@ -11,37 +11,37 @@ const Choixmachine = (): JSX.Element => {
 	const typeMachine = [
 		{
 			name: "Machine à coudre mécanique",
-			description: "Parcourir notre large catalogue de marques de machines à coudre totalement mécanique.",
+			description:
+				"Parcourir notre large catalogue de marques de machines à coudre totalement mécanique.",
 			link: "/produits/machine-a-coudre-mécanique",
-			image: "/types/machine mecanique.jpg"
+			image: "/types/machine mecanique.jpg",
 		},
 		{
 			name: "Machine à coudre éléctronique",
-			description: "Nous avons plusieurs marques de machines à coudres qui eux sont éléctroniques.",
+			description:
+				"Nous avons plusieurs marques de machines à coudres qui eux sont éléctroniques.",
 			link: "/produits/machine-a-coudre-electronique",
-			image: "/types/machine electronique.jpg"
+			image: "/types/machine electronique.jpg",
 		},
 		{
 			name: "Brodeuse",
-			description: "Chez Singer, vous pouvez choisir parmi une large liste dans notre catalogue pour les brodeuses.",
+			description:
+				"Chez Singer, vous pouvez choisir parmi une large liste dans notre catalogue pour les brodeuses.",
 			link: "/produits/brodeuse",
-			image: "/types/brodeuse.jpg"
+			image: "/types/brodeuse.jpg",
 		},
 		{
 			name: "Surjeteuse",
-			description: "Avec une grande collection de marques de surjeteuses vous trouverez à coup sûr votre bonheur.",
+			description:
+				"Avec une grande collection de marques de surjeteuses vous trouverez à coup sûr votre bonheur.",
 			link: "/produits/surjeteuse",
-			image: "/types/surjeteuse.jpg"
-		}
+			image: "/types/surjeteuse.jpg",
+		},
 	];
 
-	const mappedTypeMachine = typeMachine.map(item => (
+	const mappedTypeMachine = typeMachine.map((item) => (
 		<li className="choixmachine__list-item" key={uuidv4()}>
-			<img
-				className="image"
-				src={item.image}
-				alt={item.name}
-			/>
+			<img className="image" src={item.image} alt={item.name} />
 			<div className="name">
 				<Link href={item.link} passHref>
 					<a className="view" title="Voir la liste de ce produit">
@@ -70,12 +70,10 @@ const Choixmachine = (): JSX.Element => {
 					amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor
 					sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
 				</p>
-				<ul className="choixmachine__list">
-					{mappedTypeMachine}
-				</ul>
+				<ul className="choixmachine__list">{mappedTypeMachine}</ul>
 			</div>
 		</section>
 	);
-}
+};
 
 export default Choixmachine;

@@ -4,11 +4,15 @@ import Page from "components/Page";
 
 const Products = (): JSX.Element => {
 	const router = useRouter();
-	let { type } = router.query;
+	const { type } = router.query;
 
 	return (
 		<Page
-			title={type == "tout" ? "La liste de tous nos produits" : `Liste des machines de type: ${type}`}
+			title={
+				type == "tout"
+					? "La liste de tous nos produits"
+					: `Liste des machines de type: ${type}`
+			}
 			description="Consulter la liste exhaustive des machines proposées sur Singer France."
 			image="/machine.png"
 		>
