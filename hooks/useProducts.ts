@@ -37,9 +37,24 @@ const useProducts = (type: string | string[]): Array<IProduct> => {
 						console.error(e);
 					});
 				break;
-			default:
+			case "surjeteuse":
 				getSurjeteuse()
 					.then((data: Array<IProduct>) => setProduits(data))
+					.catch((e) => {
+						console.error(e);
+					});
+				break;
+			default:
+				let liste = [];
+				getMecanique()
+					.then((data: Array<IProduct>) => { liste = liste.concat(data); })
+					.then(() => getElectronique())
+					.then((data: Array<IProduct>) => { liste = liste.concat(data); })
+					.then(() => getBrodeuse())
+					.then((data: Array<IProduct>) => { liste = liste.concat(data); })
+					.then(() => getSurjeteuse())
+					.then((data: Array<IProduct>) => { liste = liste.concat(data); })
+					.then(() => setProduits(liste))
 					.catch((e) => {
 						console.error(e);
 					});
