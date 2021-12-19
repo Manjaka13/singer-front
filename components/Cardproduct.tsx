@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { ICardProductProps } from "helpers/interface";
 
-const CardProduct: React.FC<ICardProductProps> = ({product}): JSX.Element => (
+const CardProduct: React.FC<ICardProductProps> = ({ product }): JSX.Element => (
 	<article className="card-product">
 		<figure className="card-product__representation">
 			<img className="card-product__image" src="/machine.jpg" alt="Machine" />
@@ -11,7 +11,11 @@ const CardProduct: React.FC<ICardProductProps> = ({product}): JSX.Element => (
 					product.outstock ? "--red" : product.promotion ? "--green" : "--hidden"
 				}`}
 			>
-				{product.outstock ? "En rupture de stock" : product.promotion ? "En promotion" : ""}
+				{product.outstock
+					? "En rupture de stock"
+					: product.promotion
+					? "En promotion"
+					: ""}
 			</p>
 		</figure>
 		<h3 className="card-product__title">{product.title}</h3>

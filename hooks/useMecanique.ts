@@ -14,7 +14,7 @@ const useMecanique = (): Array<IProduct> => {
 			.then((data: Array<IProduct>) => {
 				setProduits(data);
 			})
-			.catch(e => {
+			.catch((e) => {
 				console.error(e);
 			});
 	}, []);
