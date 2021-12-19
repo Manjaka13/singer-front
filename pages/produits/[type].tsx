@@ -17,7 +17,9 @@ const Products = (): JSX.Element => {
 			description="Consulter la liste exhaustive des machines proposées sur Singer France."
 			image="/machine.png"
 		>
-			<ListeProduit type={type} />
+			{
+				type && (<ListeProduit type={type.toString()} />)
+			}
 		</Page>
 	);
 };

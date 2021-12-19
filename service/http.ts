@@ -15,7 +15,7 @@ function get(endpoint?: string): Promise<unknown> {
 			.get(`${config.baseUrl}/${ws[endpoint]}`, {
 				headers,
 			})
-			.then(({ data }) => resolve(data))
+			.then(({ data }) => resolve(data.data))
 			.catch((e) => reject(e));
 	});
 }

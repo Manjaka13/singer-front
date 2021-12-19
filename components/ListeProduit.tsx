@@ -1,18 +1,34 @@
 import React from "react";
-import { useMecanique } from "hooks/";
+import { v4 as uuidv4 } from "uuid";
+import { useProducts } from "hooks/";
 import { IListeProduitProps } from "helpers/interface";
+import CardProduct from "components/CardProduct";
 
 const ListeProduit: React.FC<IListeProduitProps> = ({ type }): JSX.Element => {
-	const produits = useMecanique();
-
-	console.log(produits);
+	const produits = useProducts(type);
+	const mappedProduits = produits.map((item) => (
+		<li className="liste-produits__item" key={uuidv4()}>
+			<CardProduct product={item} />
+		</li>
+	));
 
 	return (
 		<section className="liste-produit">
 			<div className="container">
 				<div className="section-title">
 					<div className="vertical-bar"></div>
-					<h2 className="title">Liste des produits</h2>
+					{
+						type == "tout" &&
+						(<h2 className="title">
+							Liste de tous les produits
+						</h2>)
+					}
+					{
+						type != "tout" &&
+						(<h2 className="title">
+							Liste des {type.replace("-a-", " à ").replace("-", " ")}
+						</h2>)
+					}
 				</div>
 				<p className="section-paragraph">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -23,6 +39,10 @@ const ListeProduit: React.FC<IListeProduitProps> = ({ type }): JSX.Element => {
 					cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
 					est laborum.
 				</p>
+
+				<ul className="liste-produit__liste">
+					{mappedProduits}
+				</ul>
 			</div>
 		</section>
 	);

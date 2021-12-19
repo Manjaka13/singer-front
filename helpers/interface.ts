@@ -44,7 +44,7 @@ export interface IProduct {
 
 // Liste produit props
 export interface IListeProduitProps {
-	type: string | string[];
+	type: string;
 }
 
 export interface ICardProductProps {

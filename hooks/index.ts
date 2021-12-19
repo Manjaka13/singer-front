@@ -1,3 +1,3 @@
-import useMecanique from "hooks/useMecanique";
+import useProducts from "hooks/useProducts";
 
-export { useMecanique };
+export { useProducts };

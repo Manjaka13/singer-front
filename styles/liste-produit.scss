@@ -1,0 +1,6 @@
+.liste-produit {
+	&__liste {
+		@include flexrow(space-between, initial);
+		flex-wrap: wrap;
+	}
+}
