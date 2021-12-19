@@ -33,9 +33,10 @@ export interface IPromotion {
 // Product interface
 export interface IProduct {
 	id: string;
+	type: string;
 	title: string;
-	price: number;
 	description: string;
+	details: Array<string>;
 	promotion?: IPromotion;
 	outstock?: boolean;
 }
