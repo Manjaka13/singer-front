@@ -39,4 +39,14 @@ export interface IProduct {
 	details: Array<string>;
 	promotion?: IPromotion;
 	outstock?: boolean;
+	children?: JSX.Element;
+}
+
+// Liste produit props
+export interface IListeProduitProps {
+	type: string | string[];
+}
+
+export interface ICardProductProps {
+	product: IProduct;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Page from "components/Page";
+import ListeProduit from "components/ListeProduit";
 
 const Products = (): JSX.Element => {
 	const router = useRouter();
@@ -16,7 +17,7 @@ const Products = (): JSX.Element => {
 			description="Consulter la liste exhaustive des machines proposées sur Singer France."
 			image="/machine.png"
 		>
-			<p>Products: {type}</p>
+			<ListeProduit type={type} />
 		</Page>
 	);
 };

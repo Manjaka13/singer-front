@@ -1,32 +1,25 @@
 import React from "react";
 import Link from "next/link";
-import { IProduct } from "helpers/interface";
+import { ICardProductProps } from "helpers/interface";
 
-const Cardproduct: React.FC<IProduct> = ({
-	id,
-	title,
-	price,
-	description,
-	promotion,
-	outstock,
-}): JSX.Element => (
+const CardProduct: React.FC<ICardProductProps> = ({product}): JSX.Element => (
 	<article className="card-product">
 		<figure className="card-product__representation">
 			<img className="card-product__image" src="/machine.jpg" alt="Machine" />
 			<p
 				className={`card-product__badge card-product__badge${
-					outstock ? "--red" : promotion ? "--green" : "--hidden"
+					product.outstock ? "--red" : product.promotion ? "--green" : "--hidden"
 				}`}
 			>
-				{outstock ? "En rupture de stock" : promotion ? "En promotion" : ""}
+				{product.outstock ? "En rupture de stock" : product.promotion ? "En promotion" : ""}
 			</p>
 		</figure>
-		<h3 className="card-product__title">{title}</h3>
-		<p className="card-product__price">{price ? price.toFixed(2) : "???.??"} €</p>
+		<h3 className="card-product__title">{product.title}</h3>
+		<p className="card-product__price">Produit ajouté le: 09/10/2021</p>
 		<div className="card-product__separator"></div>
-		<p className="card-product__description">{description}</p>
+		<p className="card-product__description">{product.description}</p>
 		<div className="card-product__discover-box">
-			<Link href={`/details/${id}`} passHref>
+			<Link href={`/details/${product.id}`} passHref>
 				<a className="card-product__discover" title="Découvrir ce produit">
 					Découvrir
 				</a>
@@ -35,4 +28,4 @@ const Cardproduct: React.FC<IProduct> = ({
 	</article>
 );
 
-export default Cardproduct;
+export default CardProduct;
