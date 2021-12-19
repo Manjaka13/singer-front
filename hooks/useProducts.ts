@@ -4,7 +4,7 @@ import {
 	getMecanique,
 	getElectronique,
 	getBrodeuse,
-	getSurjeteuse
+	getSurjeteuse,
 } from "service/";
 
 /*
@@ -15,7 +15,7 @@ const useProducts = (type: string | string[]): Array<IProduct> => {
 	const [produits, setProduits] = useState<Array<IProduct>>([]);
 
 	useEffect(() => {
-		switch(type) {
+		switch (type) {
 			case "machine-a-coudre-mecanique":
 				getMecanique()
 					.then((data: Array<IProduct>) => setProduits(data))

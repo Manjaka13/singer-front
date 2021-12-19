@@ -17,18 +17,12 @@ const ListeProduit: React.FC<IListeProduitProps> = ({ type }): JSX.Element => {
 			<div className="container">
 				<div className="section-title">
 					<div className="vertical-bar"></div>
-					{
-						type == "tout" &&
-						(<h2 className="title">
-							Liste de tous les produits
-						</h2>)
-					}
-					{
-						type != "tout" &&
-						(<h2 className="title">
+					{type == "tout" && <h2 className="title">Liste de tous les produits</h2>}
+					{type != "tout" && (
+						<h2 className="title">
 							Liste des {type.replace("-a-", " à ").replace("-", " ")}
-						</h2>)
-					}
+						</h2>
+					)}
 				</div>
 				<p className="section-paragraph">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -40,9 +34,7 @@ const ListeProduit: React.FC<IListeProduitProps> = ({ type }): JSX.Element => {
 					est laborum.
 				</p>
 
-				<ul className="liste-produit__liste">
-					{mappedProduits}
-				</ul>
+				<ul className="liste-produit__liste">{mappedProduits}</ul>
 			</div>
 		</section>
 	);
