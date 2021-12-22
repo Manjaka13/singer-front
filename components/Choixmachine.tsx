@@ -13,7 +13,7 @@ const Choixmachine = (): JSX.Element => {
 			name: "Machine à coudre mécanique",
 			description:
 				"Parcourir notre large catalogue de marques de machines à coudre totalement mécanique.",
-			link: "/produits/machine-a-coudre-mécanique",
+			link: "/produits/machine-a-coudre-mecanique",
 			image: "/types/machine mecanique.jpg",
 		},
 		{

@@ -46,7 +46,7 @@ const useProducts = (type: string | string[]): Array<IProduct> => {
 						console.error(e);
 					});
 				break;
-			default:
+			case "tout":
 				getMecanique()
 					.then((data: Array<IProduct>) => { liste = liste.concat(data); })
 					.then(() => getElectronique())
