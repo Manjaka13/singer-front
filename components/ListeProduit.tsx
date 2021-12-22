@@ -8,8 +8,6 @@ import Loading from "components/Loading";
 const ListeProduit: React.FC<IListeProduitProps> = ({ type }): JSX.Element => {
 	const produits = useProducts(type);
 
-	console.log(produits);
-
 	const mappedProduits = produits.map((item) => (
 		<li className="liste-produits__item" key={uuidv4()}>
 			<CardProduct product={item} />

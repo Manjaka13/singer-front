@@ -6,16 +6,8 @@ const CardProduct: React.FC<ICardProductProps> = ({ product }): JSX.Element => (
 	<article className="card-product">
 		<figure className="card-product__representation">
 			<img className="card-product__image" src={product.photo ? product.photo[0] : "/machine.jpg"} alt="Machine" />
-			<p
-				className={`card-product__badge card-product__badge${
-					product.outstock ? "--red" : product.promotion ? "--green" : "--hidden"
-				}`}
-			>
-				{product.outstock
-					? "En rupture de stock"
-					: product.promotion
-					? "En promotion"
-					: ""}
+			<p className={`card-product__badge card-product__badge${product.outstock ? "--red" : (typeof(product.promotion.type) == "string" ? "--green" : "--hidden")}`}>
+				{product.outstock ? "En rupture de stock" : (typeof(product.promotion.type) == "string" ? "En promotion" : "")}
 			</p>
 		</figure>
 		<h3 className="card-product__title">{product.title}</h3>

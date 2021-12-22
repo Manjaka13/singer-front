@@ -25,8 +25,8 @@ export interface IPageProps {
 
 // Promotion interface
 export interface IPromotion {
-	type: number;
-	name: string;
+	type?: number;
+	name?: string;
 	value?: number;
 }
 
