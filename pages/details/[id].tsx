@@ -16,14 +16,16 @@ const Details = (): JSX.Element => {
 			description="Visionnez en détails les spécificités du produit."
 			image="/machine.png"
 		>
-			{product.length > 0 && <DetailedProduct product={product[0]} />}
-			{product.length == 0 && 
-				<div className="detailed-product container">
-					<div className="loading-box">
-						<Loading />
+			<>
+				{product.length > 0 && <DetailedProduct product={product[0]} />}
+				{product.length == 0 && 
+					<div className="detailed-product container">
+						<div className="loading-box">
+							<Loading />
+						</div>
 					</div>
-				</div>
-			}
+				}
+			</>
 		</Page>
 	);
 };

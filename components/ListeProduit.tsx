@@ -2,7 +2,7 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { useProducts } from "hooks/";
 import { IListeProduitProps } from "helpers/interface";
-import CardProduct from "components/Cardproduct";
+import CardProduct from "components/CardProduct";
 import Loading from "components/Loading";
 
 const ListeProduit: React.FC<IListeProduitProps> = ({ type }): JSX.Element => {

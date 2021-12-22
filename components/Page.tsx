@@ -3,7 +3,6 @@ import Heading from "components/Heading";
 import Navigation from "components/Navigation";
 import Footer from "components/Footer";
 import Copyright from "components/Copyright";
-import Loading from "components/Loading";
 import { IPageProps } from "helpers/interface";
 
 /*

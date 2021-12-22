@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { IDetailedProductProps } from "helpers/interface";
 
-const DetailedProduct: React.FC<IDetailedProductProps> = ({ product }): JSX.Element => (
+const DetailedProduct: React.FC<IDetailedProductProps> = (): JSX.Element => (
 	<section className="detailed-product">
 		<div className="container">
 			<div className="diapo">

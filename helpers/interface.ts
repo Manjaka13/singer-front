@@ -53,6 +53,6 @@ export interface ICardProductProps {
 	product: IProduct;
 }
 
-export interface IDetailedProduct {
-	product: IProduct;
+export interface IDetailedProductProps {
+	product?: IProduct;
 }
