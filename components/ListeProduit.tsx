@@ -2,7 +2,7 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { useProducts } from "hooks/";
 import { IListeProduitProps } from "helpers/interface";
-import CardProduct from "components/CardProduct";
+import CardProduct from "components/Cardproduct";
 
 const ListeProduit: React.FC<IListeProduitProps> = ({ type }): JSX.Element => {
 	const produits = useProducts(type);
@@ -38,9 +38,9 @@ const ListeProduit: React.FC<IListeProduitProps> = ({ type }): JSX.Element => {
 				</p>
 
 				<ul
-					className={
-						`liste-produit__liste ${produits.length == 0 && 'liste-produit__liste--empty'}`
-					}
+					className={`liste-produit__liste ${
+						produits.length == 0 && "liste-produit__liste--empty"
+					}`}
 				>
 					{produits.length > 0 && mappedProduits}
 				</ul>
