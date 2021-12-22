@@ -15,6 +15,7 @@ const useProducts = (type: string | string[]): Array<IProduct> => {
 	const [produits, setProduits] = useState<Array<IProduct>>([]);
 
 	useEffect(() => {
+		setProduits([]);
 		switch (type) {
 			case "machine-a-coudre-mecanique":
 				getMecanique()
@@ -60,7 +61,7 @@ const useProducts = (type: string | string[]): Array<IProduct> => {
 					});
 				break;
 		}
-	}, []);
+	}, [type]);
 
 	return produits;
 };
