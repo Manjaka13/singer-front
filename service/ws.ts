@@ -3,10 +3,10 @@
 */
 
 const ws = {
-	mecanique: "bb1f04e0-6482-4146-9cb0-8848bdda79db",
-	electronique: "2646ef62-81f5-4910-b331-8a3b661a3b94",
-	brodeuse: "d83166ac-916c-4078-8f1b-b6936ccc3755",
-	surjeteuse: "a672ee36-9188-404d-bc8e-796652fb6966",
+	mecanique: "41e16093-e748-4694-bd51-b7167279e91f",
+	electronique: "894629e7-45d0-4260-830e-196722c46d97",
+	brodeuse: "a97aa2cc-5f70-427b-aae6-e420d11d0d45",
+	surjeteuse: "9932bf65-8cbe-4728-9d8b-48f93c2a7c83",
 };
 
 export default ws;
