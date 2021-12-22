@@ -1,0 +1,81 @@
+.detailed-product {
+	.loading-box,
+	.container {
+		@include flexrow(space-between, initial);
+		min-height: calc(100vh - 126px);
+		padding-top: 96px;
+		margin-bottom: 40px;
+	}
+
+	.loading-box {
+		@include flexrow(center, center);
+		padding-top: 126px;
+	}
+
+	.diapo {
+		@include flexrow(center, center);
+		width: 48%;
+		min-height: calc(100vh - 126px);
+		background: white;
+		box-shadow: 0px 0px 10px rgb(230, 230, 230);
+		p {
+			margin: 0;
+			padding: 0;
+			color: rgb(150, 150, 150);
+		}
+	}
+
+	.separator {
+		width: 100%;
+		height: 5px;
+		background: $color-1;
+		border-radius: 5px;
+		margin: 20px 0 15px 0;
+	}
+
+	.info {
+		width: 48%;
+		height: 100%;
+	}
+
+	.title {
+		font-size: 30pt;
+		color: $color-1;
+		margin: 0;
+		padding: 0 0 20px 0;
+	}
+
+	.description {
+		margin: 0;
+		padding: 0;
+		color: rgb(80, 80, 80);
+		text-align: justify;
+	}
+
+	.characteristics {
+		list-style-type: disc;
+		margin: 0 0 20px 0;
+		padding: 0 20px 0 40px;
+	}
+
+	.item {
+		padding: 5px 0;
+		color: rgb(120, 120, 120);
+		text-align: justify;
+	}
+
+	.fiche {
+		@include transition;
+		padding: 10px 20px;
+		background: $color-1;
+		color: white;
+		border: none;
+		cursor: pointer;
+		&:hover {
+			background: lighten($color-1, 15%);
+		}
+		&:active {
+			background: darken($color-1, 15%);
+		}
+	}
+}

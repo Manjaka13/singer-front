@@ -41,6 +41,7 @@ export interface IProduct {
 	outstock?: boolean;
 	children?: JSX.Element;
 	photo?: Array<string>;
+	fiche?: string;
 }
 
 // Liste produit props
@@ -49,5 +50,9 @@ export interface IListeProduitProps {
 }
 
 export interface ICardProductProps {
+	product: IProduct;
+}
+
+export interface IDetailedProduct {
 	product: IProduct;
 }
