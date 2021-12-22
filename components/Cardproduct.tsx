@@ -5,7 +5,7 @@ import { ICardProductProps } from "helpers/interface";
 const CardProduct: React.FC<ICardProductProps> = ({ product }): JSX.Element => (
 	<article className="card-product">
 		<figure className="card-product__representation">
-			<img className="card-product__image" src="/machine.jpg" alt="Machine" />
+			<img className="card-product__image" src={product.photo ? product.photo[0] : "/machine.jpg"} alt="Machine" />
 			<p
 				className={`card-product__badge card-product__badge${
 					product.outstock ? "--red" : product.promotion ? "--green" : "--hidden"
