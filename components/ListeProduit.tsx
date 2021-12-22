@@ -43,7 +43,9 @@ const ListeProduit: React.FC<IListeProduitProps> = ({ type }): JSX.Element => {
 						produits.length == 0 && "liste-produit__liste--empty"
 					}`}
 				>
+					{/* Si l'array n'est pas vide, on a les produits, on les affiche */}
 					{produits.length > 0 && mappedProduits}
+					{/* Si l'array est vide, on les a pas encore, on affiche le loading */}
 					{produits.length == 0 && <Loading />}
 				</ul>
 			</div>
