@@ -37,7 +37,13 @@ const ListeProduit: React.FC<IListeProduitProps> = ({ type }): JSX.Element => {
 					est laborum.
 				</p>
 
-				<ul className="liste-produit__liste">{mappedProduits}</ul>
+				<ul
+					className={
+						`liste-produit__liste ${produits.length == 0 && 'liste-produit__liste--empty'}`
+					}
+				>
+					{produits.length > 0 && mappedProduits}
+				</ul>
 			</div>
 		</section>
 	);

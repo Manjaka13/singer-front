@@ -6,6 +6,42 @@
 	box-shadow: 0px 0px 1px black;
 	margin-bottom: 40px;
 
+	@include responsive(1380px) {
+		width: 370px;
+	}
+
+	@include responsive(1255px) {
+		width: 340px;
+	}
+
+	@include responsive(1170px) {
+		width: 300px;
+	}
+
+	@include responsive(1030px) {
+		width: 420px;
+	}
+
+	@include responsive(950px) {
+		width: 370px;
+	}
+
+	@include responsive(840px) {
+		width: 340px;
+	}
+
+	@include responsive(770px) {
+		width: 320px;
+	}
+
+	@include responsive(740px) {
+		width: 300px;
+	}
+
+	@include responsive(700px) {
+		width: 100%;
+	}
+
 	&__representation {
 		@include flexrow(center, center);
 		width: 100%;

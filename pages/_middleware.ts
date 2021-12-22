@@ -1,6 +1,6 @@
-import { NextResponse, NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 
-export async function middleware(req, ev) {
+export async function middleware(req) {
 	const { pathname } = req.nextUrl;
 	if (pathname == "/produits") {
 		return NextResponse.redirect("/produits/tout");

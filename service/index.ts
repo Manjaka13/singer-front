@@ -1,5 +1,4 @@
 import http from "service/http";
-import ws from "service/ws";
 
 /*
 	Functions for doing API calls

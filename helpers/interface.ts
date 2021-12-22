@@ -40,6 +40,7 @@ export interface IProduct {
 	promotion?: IPromotion;
 	outstock?: boolean;
 	children?: JSX.Element;
+	photo?: Array<string>;
 }
 
 // Liste produit props

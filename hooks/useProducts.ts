@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { IProduct } from "helpers/interface";
 import {
 	getMecanique,
@@ -15,6 +15,8 @@ const useProducts = (type: string | string[]): Array<IProduct> => {
 	const [produits, setProduits] = useState<Array<IProduct>>([]);
 
 	useEffect(() => {
+		let liste = [];
+		setProduits([]);
 		switch (type) {
 			case "machine-a-coudre-mecanique":
 				getMecanique()
@@ -45,7 +47,6 @@ const useProducts = (type: string | string[]): Array<IProduct> => {
 					});
 				break;
 			default:
-				let liste = [];
 				getMecanique()
 					.then((data: Array<IProduct>) => { liste = liste.concat(data); })
 					.then(() => getElectronique())
@@ -60,7 +61,7 @@ const useProducts = (type: string | string[]): Array<IProduct> => {
 					});
 				break;
 		}
-	}, []);
+	}, [type]);
 
 	return produits;
 };
